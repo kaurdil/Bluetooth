@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF700"
+    tools:context=".MainActivity"
+    android:transitionGroup="true">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="Turn On"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="Turn Off"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Scan"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/button"
+        android:layout_marginTop="60dp"
+         />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        >
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanned devices:"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_above="@id/listView"
+        android:textSize="20dp"
+        android:text="Device name" />
+
+</RelativeLayout>
